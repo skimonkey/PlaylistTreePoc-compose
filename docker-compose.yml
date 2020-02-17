@@ -34,12 +34,11 @@ services:
 
   playlisttreepoc:
     container_name: playlisttreepoc
-    image: skimonkey/playlisttreepoc:0.2
+    image: skimonkey/playlisttreepoc:0.3
     depends_on:
       - postgres    
     ports:
       - "5010:80"
-      - "5011:443"      
     networks:
       - postgres
 
